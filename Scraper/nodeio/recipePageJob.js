@@ -8,6 +8,7 @@ var nio = require("node.io"),
     
 exports.job = new nio.Job(opts, {
 
+  // The input function is not working properly.  It only runs once.
   input: function(start, num, callback) {
     
     var self = this;
